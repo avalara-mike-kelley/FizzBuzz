@@ -23,8 +23,8 @@ namespace FizzBuzz.Library
                 throw new ArgumentException();
             }
 
-            bool fizz = i % 3 == 0 ? true : false;
-            bool buzz = i % 5 == 0 ? true : false;
+            bool fizz = i % 3 == 0;
+            bool buzz = i % 5 == 0;
 
             if (fizz && buzz)
             {
