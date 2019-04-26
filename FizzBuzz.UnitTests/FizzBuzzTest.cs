@@ -11,7 +11,7 @@ namespace FizzBuzz.UnitTests
         public class Determine : FizzBuzzTest
         {
             [TestMethod]
-            public void DivisibleBy3_Fizz()
+            public void DivisibleOnlyBy3_Fizz()
             {
                 // Arrange
                 var i = 3;
@@ -24,7 +24,7 @@ namespace FizzBuzz.UnitTests
             }
 
             [TestMethod]
-            public void DivisibleBy5_Buzz()
+            public void DivisibleOnlyBy5_Buzz()
             {
                 // Arrange
                 var i = 5;
@@ -40,7 +40,7 @@ namespace FizzBuzz.UnitTests
             public void DivisibleBy3And5_FizzBuzz()
             {
                 // Arrange
-                var i = 15;
+                var i = 30;
 
                 // Act
                 var actual = Library.FizzBuzz.Determine(i);
